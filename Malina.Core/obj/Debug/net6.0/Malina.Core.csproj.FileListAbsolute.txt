@@ -1,0 +1,12 @@
+C:\Users\kamra\source\repos\Malina\Malina.Core\bin\Debug\net6.0\Malina.Core.deps.json
+C:\Users\kamra\source\repos\Malina\Malina.Core\bin\Debug\net6.0\Malina.Core.dll
+C:\Users\kamra\source\repos\Malina\Malina.Core\bin\Debug\net6.0\Malina.Core.pdb
+C:\Users\kamra\source\repos\Malina\Malina.Core\obj\Debug\net6.0\Malina.Core.csproj.AssemblyReference.cache
+C:\Users\kamra\source\repos\Malina\Malina.Core\obj\Debug\net6.0\Malina.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kamra\source\repos\Malina\Malina.Core\obj\Debug\net6.0\Malina.Core.AssemblyInfoInputs.cache
+C:\Users\kamra\source\repos\Malina\Malina.Core\obj\Debug\net6.0\Malina.Core.AssemblyInfo.cs
+C:\Users\kamra\source\repos\Malina\Malina.Core\obj\Debug\net6.0\Malina.Core.csproj.CoreCompileInputs.cache
+C:\Users\kamra\source\repos\Malina\Malina.Core\obj\Debug\net6.0\Malina.Core.dll
+C:\Users\kamra\source\repos\Malina\Malina.Core\obj\Debug\net6.0\refint\Malina.Core.dll
+C:\Users\kamra\source\repos\Malina\Malina.Core\obj\Debug\net6.0\Malina.Core.pdb
+C:\Users\kamra\source\repos\Malina\Malina.Core\obj\Debug\net6.0\ref\Malina.Core.dll
