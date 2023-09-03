@@ -10,5 +10,8 @@ namespace Malina.Data.Helpers
     {
         public static string RootPath;
         public static string SliderPath;
+
+        public const string AdminRole = "Admin";
+        public const string UserRole = "User";
     }
 }

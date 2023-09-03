@@ -1,8 +1,30 @@
 {
   "version": 2,
-  "dgSpecHash": "1YxI68rzVDFQYN8qlH4pNCopw1wTMfeVYmXELjjicATdaM87NxxOm9TMTEqTKv9afHRiAuqAh2YEpcw3ljwjvg==",
+  "dgSpecHash": "quO39ALHW2GYZ9BH58S0+Vju+5M+BRpk1L6GxV+V5lw3InbxGTHEjJG08r2lW4uqMUMn8UnjjJDCeKGLRZM+Ag==",
   "success": true,
   "projectFilePath": "C:\\Users\\kamra\\source\\repos\\Malina\\Malina.Core\\Malina.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.11\\microsoft.aspnetcore.cryptography.internal.6.0.11.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.11\\microsoft.aspnetcore.cryptography.keyderivation.6.0.11.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.11\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.11.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.11\\microsoft.entityframeworkcore.6.0.11.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.11\\microsoft.entityframeworkcore.abstractions.6.0.11.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.11\\microsoft.entityframeworkcore.analyzers.6.0.11.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.11\\microsoft.entityframeworkcore.relational.6.0.11.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.extensions.identity.core\\6.0.11\\microsoft.extensions.identity.core.6.0.11.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.extensions.identity.stores\\6.0.11\\microsoft.extensions.identity.stores.6.0.11.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

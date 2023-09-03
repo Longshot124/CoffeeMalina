@@ -1,5 +1,8 @@
+using Malina.Core.Entities;
+using Malina.Data.DAL;
 using Malina.Data.Data;
 using Malina.Data.Helpers;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Malina
@@ -13,11 +16,32 @@ namespace Malina
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-            builder.Services.AddDbContext<MalinaDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddDbContext<MalinaDbContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
+                    builder =>
+                    {
+                        builder.MigrationsAssembly(nameof(Malina));
+                    });
+
+            });
+            builder.Services.AddIdentity<User, IdentityRole>(options =>
+            {
+                options.Lockout.MaxFailedAccessAttempts = 5;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+
+                options.Password.RequireLowercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+
+                options.User.RequireUniqueEmail = true;
+
+            });
+
+
+            builder.Services.Configure<AdminUser>(builder.Configuration.GetSection("AdminUser"));
 
             Constants.RootPath = builder.Environment.WebRootPath;
             Constants.SliderPath = Path.Combine(Constants.RootPath, "assets", "images", "sliders");
-
 
 
             var app = builder.Build();
@@ -33,7 +57,13 @@ namespace Malina
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-            app.UseRouting();
+            using (var scope = app.Services.CreateScope())
+            {
+                var serviceProvider = scope.ServiceProvider;
+                var dataInitializer = new DataInitializer(serviceProvider);
+            }
+
+                app.UseRouting();
 
             app.UseAuthorization();
 

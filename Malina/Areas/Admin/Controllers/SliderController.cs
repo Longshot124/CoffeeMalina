@@ -1,7 +1,7 @@
 ﻿using Malina.BLL.Extensions;
 using Malina.BLL.VIewModels.Slider;
 using Malina.Core.Entities;
-using Malina.Data.Data;
+using Malina.Data.DAL;
 using Malina.Data.Helpers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

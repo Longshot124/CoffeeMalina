@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Malina.Data.Data
+namespace Malina.Data.DAL
 {
-    public class MalinaDbContext : DbContext
+    public class MalinaDbContext : IdentityDbContext<User>
     {
-        public MalinaDbContext(DbContextOptions<MalinaDbContext> options) :base(options)
+        public MalinaDbContext(DbContextOptions<MalinaDbContext> options) : base(options)
         {
 
         }
