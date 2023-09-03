@@ -1,0 +1,34 @@
+﻿@using Malina.BLL.VIewModels.Slider
+@model SliderUpdateViewModel
+<div class="row col-sm-6">
+    <div class="col-sm-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"> Update category</h4>
+                <img src="~/img/slider/@Model.ImageUrl" style="width:130px;height:130px" />
+                <form class="forms-sample" method="post" asp-action="Update" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label asp-for="Image">Name</label>
+                        <input asp-for="Image" class="form-control" placeholder="Name" accept="image/*">
+                        <span asp-validation-for="Image" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="SliderName">Title</label>
+                        <input asp-for="SliderName" class="form-control" placeholder="Title">
+                        <span asp-validation-for="SliderName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Description">SubTitle</label>
+                        <input asp-for="Description" class="form-control" placeholder="SubTitle">
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    
+                    
+
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <button class="btn btn-light" asp-action="Index">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

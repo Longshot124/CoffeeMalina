@@ -1,4 +1,5 @@
 using Malina.Data.Data;
+using Malina.Data.Helpers;
 using Microsoft.EntityFrameworkCore;
 
 namespace Malina
@@ -13,6 +14,11 @@ namespace Malina
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddDbContext<MalinaDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            Constants.RootPath = builder.Environment.WebRootPath;
+            Constants.SliderPath = Path.Combine(Constants.RootPath, "assets", "images", "sliders");
+
+
 
             var app = builder.Build();
 

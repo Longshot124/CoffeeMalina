@@ -250,3 +250,9 @@ C:\Users\kamra\source\repos\Malina\Malina\bin\Debug\net6.0\Malina.Core.dll
 C:\Users\kamra\source\repos\Malina\Malina\bin\Debug\net6.0\Malina.Data.dll
 C:\Users\kamra\source\repos\Malina\Malina\bin\Debug\net6.0\Malina.Data.pdb
 C:\Users\kamra\source\repos\Malina\Malina\bin\Debug\net6.0\Malina.Core.pdb
+C:\Users\kamra\source\repos\Malina\Malina\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\kamra\source\repos\Malina\Malina\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\kamra\source\repos\Malina\Malina\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\kamra\source\repos\Malina\Malina\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\kamra\source\repos\Malina\Malina\bin\Debug\net6.0\Malina.BLL.dll
+C:\Users\kamra\source\repos\Malina\Malina\bin\Debug\net6.0\Malina.BLL.pdb

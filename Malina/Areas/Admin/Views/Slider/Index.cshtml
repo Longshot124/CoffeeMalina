@@ -1,0 +1,55 @@
+﻿@using Malina.Core.Entities
+
+@model List<Slider>
+
+
+<div class="row col-lg-12">
+    <div class="col-lg-8 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Basic Table</h4>
+                <a class="btn btn-primary" asp-action="create">Create</a>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>SliderName</th>
+                                <th>Description</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <img style="border-radius:0px; object-fit:contain; height:150px; width:150px;" src="~/assets/images/sliders/@item.ImageUrl" alt="image">
+                                    </td>
+                                    <td>
+                                        @item.SliderName
+                                    </td>
+                                    <td>
+                                        @item.Description
+                                    </td>
+                                   
+
+                                    <td class="text-nowrap">
+                                        <a class="btn btn-success" asp-action="update" asp-route-id="@item.Id">Update</a>
+                                        <div style="display:inline-block">
+                                            <form class="forms-sample" method="post" asp-action="Delete" asp-route-id="@item.Id">
+                                                <button class="btn btn-danger" id="delete-category" value="@item.Id">Delete</button>
+                                            </form>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
