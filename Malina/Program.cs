@@ -9,7 +9,7 @@ namespace Malina
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public async static  Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -35,7 +35,7 @@ namespace Malina
 
                 options.User.RequireUniqueEmail = true;
 
-            });
+            }).AddEntityFrameworkStores<MalinaDbContext>().AddDefaultTokenProviders();
 
 
             builder.Services.Configure<AdminUser>(builder.Configuration.GetSection("AdminUser"));
@@ -61,6 +61,8 @@ namespace Malina
             {
                 var serviceProvider = scope.ServiceProvider;
                 var dataInitializer = new DataInitializer(serviceProvider);
+
+                await dataInitializer.SeedData();
             }
 
                 app.UseRouting();
@@ -80,7 +82,7 @@ namespace Malina
                   );
             });
 
-            app.Run();
+            await app.RunAsync();
         }
     }
 }

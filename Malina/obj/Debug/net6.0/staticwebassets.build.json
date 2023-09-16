@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fNa2juWbKS+wQ8iHPUl37w3LrvAH+0fbg8PaBmlFwFA=",
+  "Hash": "6DSNxdKXl2zZFXCHQyMD7gWk9k6IcTfAUzxPvOgNO0o=",
   "Source": "Malina",
   "BasePath": "_content/Malina",
   "Mode": "Default",
@@ -5455,6 +5455,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\lightcase.js"
+    },
+    {
+      "Identity": "C:\\Users\\kamra\\source\\repos\\Malina\\Malina\\wwwroot\\assets\\js\\login.js",
+      "SourceId": "Malina",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kamra\\source\\repos\\Malina\\Malina\\wwwroot\\",
+      "BasePath": "_content/Malina",
+      "RelativePath": "assets/js/login.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\login.js"
     },
     {
       "Identity": "C:\\Users\\kamra\\source\\repos\\Malina\\Malina\\wwwroot\\assets\\js\\main.js",

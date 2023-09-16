@@ -1,0 +1,197 @@
+﻿@{
+    Layout = null;
+}
+<style>
+    :root {
+  --purple: #e57dff;
+  --blue: #7d26ff;
+  --red: #f47373;
+  --green: #37d67a;
+}
+
+#background {
+  background-image: url("/assets/images/hero/hero-img-3-1.jpg");
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: alternate;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  position: fixed;
+}
+
+#container {
+  position: relative;
+  background-color: transparent;
+  height: 375px;
+  width: 375px;
+  border-radius: 15px;
+  padding: 2em;
+  
+}
+
+#buttons {
+  padding: 2em;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+#header {
+  font-family: Inconsolata;
+  font-size: 75px;
+  color: white;
+}
+
+.input {
+  background-color: #e0e0e0;
+  font-size: 15px;
+  width: 90%;
+  border: none;
+  padding: 1em;
+  border-radius: 20px;
+  /* box-shadow: 0px 0px 1px 1px var(--purple) inset; */
+  outline: none;
+}
+
+.btn {
+  background-color: white;
+  font-size: 15px;
+  border: none;
+  padding: 10px;
+  margin: 2px;
+  float: left;
+  cursor: pointer;
+  color: var(--purple);
+}
+
+#status {
+  font-size: 15px;
+  font-family: Inconsolata;
+  padding: 0.8em;
+}
+
+.enterbtn {
+  font-family: Inconsolata;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin: 2px;
+  color: white;
+  float: left;
+  cursor: pointer;
+  background-color:#C7A17A;
+}
+
+keyframes wiggle {
+  0% {
+    transform: translate(0px);
+  }
+  25% {
+    transform: translate(10px);
+  }
+  60% {
+    transform: translate(-10px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+::placeholder {
+  color: #3d3d3d;
+}
+
+#page {
+  padding: 2em;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  display: none;
+  z-index: 1;
+  background: white;
+  border-radius: 10px;
+}
+
+#pagetxt {
+  font-family: Inconsolata;
+  font-size: 45px;
+  color: black;
+}
+
+#pagebody {
+  font-family: Inconsolata;
+  font-size: 20px;
+  color: black;
+}
+
+#bckbtn {
+  color: black;
+  font-family: Material Icons;
+  color: black;
+  font-size: 80px;
+  background: none;
+  border-style: none;
+  cursor: pointer;
+  animation: point 1s infinite ease-in-out;
+}
+
+#bckbtn:hover {
+  color: grey;
+  transition: 0.5s;
+}
+
+keyframes point {
+  0% {
+    transform: translate(-5px);
+  }
+  50% {
+    transform: translate(-15px);
+  }
+  100% {
+    transform: translate(-5px);
+  }
+}
+
+keyframes slideout {
+  to {
+    transform: translatey(100%);
+    opacity: 0;
+  }
+}
+
+</style>
+<div id="background">
+    <div id="container">
+        <span id="header">Login</span>
+        <br>
+        <br>
+        <input type="input" id="user" placeholder="Username" class="input">
+        <br>
+        <br>
+        <input type="password" id="pass" placeholder="Password" class="input">
+        <br>
+        <br>
+        <button onclick="check()" id="button" class="enterbtn">Continue</button>
+        <br>
+        <br>
+        <br>
+        <span id="status"></span>
+        <div id="buttons">
+            <button onclick="showStuff()" id="show_button" style="background-color:#C7A17A; color:white" class="btn">Show Password</button>
+        </div>
+    </div>
+    <div id="page">
+        <button id="bckbtn" onclick="back()">arrow_back</button>
+        <br>
+        <span id="pagetxt">Congrats, you've logged in!</span>
+        <br>
+        <br>
+    </div>
+</div>
+
+<script src="~/assets/js/login.js"></script>
