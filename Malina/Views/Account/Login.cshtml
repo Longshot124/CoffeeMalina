@@ -1,6 +1,9 @@
-﻿@{
+﻿@using Malina.BLL.VIewModels.Acconts
+@{
+
     Layout = null;
 }
+@model LoginViewModel
 <style>
     :root {
   --purple: #e57dff;
@@ -166,25 +169,29 @@ keyframes slideout {
 
 </style>
 <div id="background">
-    <div id="container">
-        <span id="header">Login</span>
-        <br>
-        <br>
-        <input type="input" id="user" placeholder="Username" class="input">
-        <br>
-        <br>
-        <input type="password" id="pass" placeholder="Password" class="input">
-        <br>
-        <br>
-        <button onclick="check()" id="button" class="enterbtn">Continue</button>
-        <br>
-        <br>
-        <br>
-        <span id="status"></span>
-        <div id="buttons">
-            <button onclick="showStuff()" id="show_button" style="background-color:#C7A17A; color:white" class="btn">Show Password</button>
+    <form asp-action="login" method="post">
+        <div id="container">
+            <span id="header">Login</span>
+
+            <br>
+            <br>
+            <input asp-for="UserName" placeholder="Username" class="input">
+            <br>
+            <br>
+            <input asp-for="Password" placeholder="Password" class="input">
+            <br>
+            <br>
+            <button type="submit" onclick="check()" id="button" class="enterbtn">Continue</button>
+            <br>
+            <br>
+            <br>
+            <span id="status"></span>
+            <div id="buttons">
+                <button onclick="showStuff()" id="show_button" style="background-color:#C7A17A; color:white" class="btn">Show Password</button>
+            </div>
         </div>
-    </div>
+
+    </form>
     <div id="page">
         <button id="bckbtn" onclick="back()">arrow_back</button>
         <br>
